@@ -1,5 +1,5 @@
 # bridges_gps
-##Installation
+## Installation
 1. Add this lines to pubspec.yaml.
 ```yaml
 bridges_gps:
@@ -8,7 +8,7 @@ bridges_gps:
     ref: main
 ```
 
-##How to use
+## How to use
 1. Call this function.
 ```dart
 final _location = await determinePosition();
