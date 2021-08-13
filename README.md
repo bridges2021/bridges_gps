@@ -7,7 +7,14 @@ bridges_gps:
     url: https://github.com/bridges2021/bridges_gps.git
     ref: main
 ```
-
+2. Add this lines to ios/Runner/Info.plist
+```plist
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>This app needs access to location when open.</string>
+<key>NSLocationAlwaysUsageDescription</key>
+<string>This app needs access to location when in the background.</string>
+<key>UIViewControllerBasedStatusBarAppearance</key>
+```
 ## How to use
 1. Call this function.
 ```dart
