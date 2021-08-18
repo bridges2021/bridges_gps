@@ -4,7 +4,7 @@ import 'package:location/location.dart';
 Future<LocationData> getLocation() async {
   Location location = new Location();
 
-  if (kIsWeb) {
+  if (!kIsWeb) {
     bool _serviceEnabled;
     PermissionStatus _permissionGranted;
     LocationData _locationData;
