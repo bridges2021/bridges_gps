@@ -1,3 +1,4 @@
+import 'package:bridges_gps/bridges_gps.dart';
 import 'package:bridges_gps/getGPS.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
             child: Text('Get location'),
             onPressed: () async {
               try {
-                final _location = await determinePosition();
+                final _location = await getLocation();
                 print(_location);
               } catch (e) {
                 print(e);
